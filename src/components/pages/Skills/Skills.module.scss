@@ -1,0 +1,88 @@
+.Section {
+	padding-inline: 3rem;
+	padding-block: 10vh;
+
+	&_Title {
+		text-align: center;
+		margin: 20px;
+		font-size: 40px;
+		letter-spacing: 4px;
+		font-weight: bold;
+		color: #fff6a9;
+		animation: blink 12s infinite;
+		-webkit-animation: blink 12s infinite;
+	}
+}
+
+.Link {
+	display: flex;
+	overflow: hidden;
+	text-align: center;
+	background: rgba(63, 63, 63, 0.2);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	height: 50vh;
+	padding: 1rem;
+	transition: 0.4s all ease;
+
+	&:hover {
+		opacity: 0.7;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	}
+
+	&_IconCont {
+		font-size: 60px;
+		color: #ff00b7;
+	}
+
+	&_Skill {
+		color: #00fff2;
+
+	}
+
+	&_Body {
+		margin-block: 10px;
+		color: rgba(245, 245, 245, 0.5);
+	}
+}
+
+@keyframes blink {
+
+	20%,
+	24%,
+	55% {
+		color: #00fff2;
+		text-shadow: none;
+	}
+
+	0%,
+	19%,
+	21%,
+	23%,
+	25%,
+	54%,
+	56%,
+	100% {
+		color: #fccaff;
+		text-shadow: 0 0 5px #ff00b7, 0 0 15px #ff00b7, 0 0 25px #ff00b7,
+			0 0 20px #ff00b7, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+	}
+}
+
+
+@media only screen and (max-width: 800px) {
+	.Section {
+		padding-inline: 2rem;
+		padding-block: 10vh;
+	}
+
+	.Link {
+		height: 50vh;
+
+		&_Body {
+			font-size: 13px;
+		}
+	}
+
+}
