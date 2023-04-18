@@ -1,8 +1,9 @@
 import ContactVideo from "../../../assets/video/Contact.mp4"
 
 export const contactData = {
+	title: "Contact Me",
 	fullName: "Petrosyan Sergey",
-	phone: "+37494320272",
+	phone: "+374 (94) 32-02-72",
 	email: "petrosyanserg33@gmail.com",
 	addres: "Armenian Kotayk Province",
 	links: {

@@ -1,0 +1,123 @@
+.Portfolio {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 3rem;
+
+	&_Slider {
+		margin-top: 4rem;
+		cursor: pointer;
+	}
+
+	&_Title {
+		font-size: 40px;
+		letter-spacing: 2px;
+	}
+
+	&_Card {
+		background: rgba(63, 63, 63, 0.2);
+		backdrop-filter: blur(10px);
+		border-radius: 15px;
+		margin: 10px;
+		transition: all 0.4s ease;
+		height: 35vh;
+		padding: 1rem;
+
+
+		&:hover {
+			opacity: 0.7;
+			border: 1px solid #00fff2;
+			box-shadow: 0 0 5px #00fff2, 0 0 15px #00fff2, 0 0 25px #00fff2;
+		}
+	}
+
+	&_Image {
+		width: 100%;
+	}
+
+	&_CardLinks {
+		display: flex;
+		justify-content: space-between;
+		margin-block: 20px;
+	}
+
+	&_CardTitle {
+		animation: blink 12s infinite;
+		margin-top: 10px;
+	}
+
+	&_LinkBox {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&_CardIcon {
+		font-size: 20px;
+	}
+
+	&_Link {
+		font-size: 12px;
+		color: whitesmoke;
+		animation: blink2 15s infinite;
+	}
+}
+
+@keyframes blink {
+
+	20%,
+	24%,
+	55% {
+		color: #939393;
+		text-shadow: none;
+	}
+
+	0%,
+	19%,
+	21%,
+	23%,
+	25%,
+	54%,
+	56%,
+	100% {
+		color: #fccaff;
+		text-shadow: 0 0 5px #ff00b7, 0 0 15px #ff00b7, 0 0 25px #ff00b7,
+			0 0 20px #ff00b7, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+	}
+}
+
+@keyframes blink2 {
+
+	20%,
+	24%,
+	55% {
+		color: #939393;
+		text-shadow: none;
+	}
+
+	0%,
+	19%,
+	21%,
+	23%,
+	25%,
+	54%,
+	56%,
+	100% {
+		color: #fccaff;
+		text-shadow: 0 0 5px #00fff2, 0 0 15px #00fff2, 0 0 25px #00fff2,
+			0 0 20px #00fff2, 0 0 30px #003f92, 0 0 80px #003f92, 0 0 80px #003f92;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.Portfolio {
+
+		&_Slider {
+			margin-top: 3rem;
+		}
+
+		&_Title {
+			font-size: 30px;
+		}
+	}
+}

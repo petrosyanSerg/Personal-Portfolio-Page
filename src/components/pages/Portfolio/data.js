@@ -7,6 +7,7 @@ import Weather from "../../../assets/image/Weather.png"
 import Sunnyside from "../../../assets/image/Sunnyside.png"
 
 export const portfolioData = {
+	title: "Bringing Ideas to Life A Showcase of My Projects",
 	projects: [
 		{
 			id: 1,
@@ -51,6 +52,5 @@ export const portfolioData = {
 			img: SearchCountry
 		}
 	],
-	links: "https://github.com/petrosyanSerg?tab=repositories",
 	video: PortfolioVideo
 }
